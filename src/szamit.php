@@ -24,8 +24,9 @@ if (!empty($_GET["tom"]) and !empty($_GET["mag"])){
     $index = szamitArray($tom, $mag);
 
 }else{
-    $index = "Hiba! Nincs minden kitőltve!";
+    $index = "Hiba! Nincs minden mező kitőltve!";
 }
+
 
 $page = str_replace("{{ res }}", $index, $page);
 
